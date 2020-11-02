@@ -1,0 +1,39 @@
+server.port: 8777
+spring:
+  application.name: eureka-gatewayroutes
+  # redis 库
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
+  # spring cloud
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          # gateway开启服务注册和发现的功能，并且spring cloud gateway自动根据服务发现为每一个服务创建了一个router
+          # 这个router将以服务名开头的请求路径转发到对应的服务
+          enabled: true
+          # 将请求路径上的服务名配置为小写
+          lower-case-service-id: true
+#      routes:
+#        filters:
+#        -  name: RequestRateLimiter
+#           args:
+#             # 用于限流的键的解析器的Bean对象的名字
+#             key-resolver: '#{@hostAddrKeyResolver}'
+#             # 每秒填充的平均速率
+#             redis-state-limiter.replenishRate: 1
+#             #令牌桶总容量
+#             redis-state-limiter.busrstCapcaty: 3
+#       自定义GateWayFactory
+#       RequestTime为自定义GateWayFilterFactory的前缀 true/false 设置 withParams
+#         - id: elapse_route
+#                uri: http://httpbin.org:80/get
+#       - RequestTime=true
+#         predicates:
+#      - Path=/requestTime/{segment}
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

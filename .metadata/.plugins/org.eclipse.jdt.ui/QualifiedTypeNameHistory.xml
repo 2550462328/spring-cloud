@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
+<fullyQualifiedTypeName name="org.omg.CORBA.NameValuePair"/>
+<fullyQualifiedTypeName name="org.apache.http.HttpEntity"/>
+<fullyQualifiedTypeName name="org.apache.http.HttpHeaders"/>
+<fullyQualifiedTypeName name="org.apache.http.NameValuePair"/>
+<fullyQualifiedTypeName name="org.springframework.test.web.servlet.MockMvc"/>
+<fullyQualifiedTypeName name="org.junit.Before"/>
+<fullyQualifiedTypeName name="org.springframework.test.web.servlet.setup.MockMvcBuilders"/>
+<fullyQualifiedTypeName name="org.springframework.test.web.servlet.request.MockMvcRequestBuilders"/>
+<fullyQualifiedTypeName name="cn.ictt.zhanghui.controller.HelloController"/>
+<fullyQualifiedTypeName name="org.springframework.http.MediaType"/>
+<fullyQualifiedTypeName name="com.alibaba.fastjson.JSONObject"/>
+<fullyQualifiedTypeName name="cn.ictt.zhanghui.util.LinkUtil"/>
+<fullyQualifiedTypeName name="com.google.gson.Gson"/>
+<fullyQualifiedTypeName name="cn.ictt.zhanghui.util.HttpDelegate"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
+</qualifiedTypeNameHistroy>

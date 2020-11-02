@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+org.mengyun.tcctransaction.autoconfigure.TccBootAutoConfiguration,\
+org.mengyun.tcctransaction.feign.enhance.FeignEnhanceAutoConfiguration

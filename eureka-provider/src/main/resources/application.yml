@@ -1,0 +1,46 @@
+spring:
+  application:
+    name: eureka-provider
+  http:
+    encoding:
+      force: true
+      charset: UTF-8
+      enabled: true
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/spring_boot_test2?useSSL=false
+    username: root
+    password: root
+  mvc:
+    throw-exception-if-no-handler-found: true
+server:
+  port: 8662
+  tomcat:
+    uri-encoding: UTF-8
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
+    hostname: ${spring.cloud.client.ip-address}
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+logging:
+  level:
+    org.mengyun: debug
+ribbon:
+  eureka:
+    enabled: true
+tcc:
+  enabled: true
+  datasource:
+    data-source-provider: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/tcc?useSSL=false
+    username: root
+    password: root
+    domain: SAMPLE1
+    table-suffix: _SAMPLE1
+  feign:
+    enhance:
+      enabled: true
